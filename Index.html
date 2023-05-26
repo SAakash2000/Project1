@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+   
+</head>
+
+<body>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Total Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach ($students as $student)
+                <tr>
+                    <td>{{ $student->id }}</td>
+                    <td>{{ $student->name }}</td>
+                    <td>{{ $student->total_marks }}</td>
+                </tr>
+            @endforeach
+        </tbody>
+    </table>
+</body>
+<script src="Script.js"></script>
+</html>
